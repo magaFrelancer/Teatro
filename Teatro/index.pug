@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Teatro
+        link(rel="stylesheet", href="./css/style.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
+        link(href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@700&display=swap", rel="stylesheet")
+        script(src="./script.js" defer)
+    body
+        header.header
+            .header__left-block
+                .left-block__inner
+                    .left-block__text 
+                        img(src="./imgs/headerText.svg", alt="1")
+                    .left-block__links
+                        a.left-block__items(href="#")
+                            i(class="fab fa-instagram")
+                        a.left-block__items(href="#")
+                            i(class="fab fa-facebook-f")
+                        a.left-block__items(href="#")
+                            i(class="fab fa-vk")
+                        a.left-block__items(href="#")
+                            i(class="fab fa-youtube")
+            .container
+                include ./pugs/nav.pug
+
+
+                section.header__info
+                    .header__info-left
+                        .header__title  Большой театр
+                        .header__text.
+                            Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория.
+                            Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.
+                        .header__btn 
+                            a.header__btn-link афиша
+                    
+                    .header__info-right
+                        .info-right__imgs
+                            img.info-right__itms(src="./imgs/image 4.jpg", alt="image")
+                            img.info-right__itms.active(src="./imgs/image 3.jpg", alt="image")
+
+                        .info-right__btns 
+                            .info-right__btn(data-target="prev") <span class="spanOne">&LeftArrow;</span> Пред 
+                            .info-right__btn(data-target="next") След <span class="spanTwo">&RightArrow;</span>

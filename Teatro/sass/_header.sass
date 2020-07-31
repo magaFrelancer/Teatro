@@ -1,0 +1,207 @@
+.header 
+    width: 100%
+    height: 100vh
+    background: url('../imgs/bg.jpg') no-repeat center center/cover
+    padding-top: 30px
+    position: relative
+
+.header__left-block
+    position: absolute
+    left: 0 
+    top: 0
+    max-width: 150px
+    width: 100%
+    height: 100%
+
+    display: flex 
+    justify-content: center
+    align-items: flex-end
+
+    background: rgba(51, 51, 51, 0.75)
+
+.left-block__inner
+
+    height: 500px
+    display: flex 
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 86px
+
+.left-block__text
+    position: relative
+    top: -50px
+
+    &::after
+        content: "" 
+        position: absolute
+        display: block
+        height: 3px
+        width: 80px
+        left: -32px
+        bottom: -62px
+        background: #C4C4C4
+
+        transform: rotate(90deg)
+    
+.left-block__links
+    display: flex 
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 174px
+
+.left-block__items
+    color: rgba(255, 255, 255, 0.6)
+
+    i 
+        font-size: 22px
+        transition: .2s
+        
+        &:hover 
+            color: #D1A954
+
+// nav
+
+.header__nav
+    display: flex
+    justify-content: space-between
+
+    margin-bottom: 130px
+
+.header__menu
+    max-width: 700px
+    width: 100%
+
+    display: flex
+    justify-content: space-between
+    list-style: none
+
+.header__links
+    font-family: Open Sans Condensed
+    font-weight: bold
+    font-size: 18px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    transition: .2s linear
+    &:hover
+        color: #D1A954
+        
+.header__number-link
+    font-family: Open Sans Condensed
+    font-weight: bold
+    font-size: 16px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #FFFFFF
+    position: relative
+
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        bottom: -5px
+        left: 0
+        max-width: 100%
+        width: 100%
+        height: 2px
+        background: #D1A954
+// header-info
+
+.header__info
+    width: 100%
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header__info-left
+    max-width: 540px
+    width: 100%
+
+
+.header__info-right
+    max-width: 350px
+    width: 100%
+
+    height: 40px
+
+    height: 490px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.header__title
+    font-style: normal
+    font-weight: bold
+    font-size: 64px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+
+    margin-bottom: 30px
+
+.header__text
+    /* p / 14r */
+
+    font-family: Open Sans
+    font-weight: 400
+    font-size: 14px
+    line-height: 1.7
+
+    margin-bottom: 49px
+    /* or 21px */
+.header__btn-link
+    display: flex
+
+    width: 160px
+    height: 50px
+    justify-content: center
+    align-items: center
+    font-family: Open Sans Condensed
+    font-weight: bold
+    font-size: 18px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    background:  #D1A954
+    transition: .2s linear
+    cursor: pointer
+    &:hover 
+        background: #ffffff
+        color: #D1A954
+.info-right__imgs
+    position: relative
+    img 
+        position: absolute
+        transition: .2s linear
+        left: 0
+        top: 0
+        &.active
+            left: -20px
+            top: -20px
+            z-index: 2
+    
+.info-right__btns 
+    width: 100%
+
+    position: relative
+    bottom: -55px
+
+    display: flex
+    justify-content: space-between
+
+.info-right__btn
+    cursor: pointer 
+    transition: .2s linear
+    color: #C4C4C4
+    display: flex
+    justify-content: space-between
+    font-size: 18px
+
+    &:hover 
+        color: #ffffff
+.spanOne 
+    padding-right: 20px
+
+.spanTwo
+    padding-left: 20px

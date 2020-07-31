@@ -1,0 +1,338 @@
+/* line 1, ../sass/_base.sass */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../sass/_base.sass */
+body {
+  color: #ffffff;
+  font-family: Open Sans Condensed;
+}
+
+/* line 11, ../sass/_base.sass */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 15, ../sass/_base.sass */
+.container {
+  max-width: 1010px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_header.sass */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("../imgs/bg.jpg") no-repeat center center/cover;
+  padding-top: 30px;
+  position: relative;
+}
+
+/* line 8, ../sass/_header.sass */
+.header__left-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: rgba(51, 51, 51, 0.75);
+}
+
+/* line 22, ../sass/_header.sass */
+.left-block__inner {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 86px;
+}
+
+/* line 31, ../sass/_header.sass */
+.left-block__text {
+  position: relative;
+  top: -50px;
+}
+/* line 35, ../sass/_header.sass */
+.left-block__text::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 80px;
+  left: -32px;
+  bottom: -62px;
+  background: #C4C4C4;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* line 47, ../sass/_header.sass */
+.left-block__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 174px;
+}
+
+/* line 54, ../sass/_header.sass */
+.left-block__items {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 57, ../sass/_header.sass */
+.left-block__items i {
+  font-size: 22px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/* line 61, ../sass/_header.sass */
+.left-block__items i:hover {
+  color: #D1A954;
+}
+
+/* line 66, ../sass/_header.sass */
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+/* line 72, ../sass/_header.sass */
+.header__menu {
+  max-width: 700px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+/* line 80, ../sass/_header.sass */
+.header__links {
+  font-family: Open Sans Condensed;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/* line 88, ../sass/_header.sass */
+.header__links:hover {
+  color: #D1A954;
+}
+
+/* line 91, ../sass/_header.sass */
+.header__number-link {
+  font-family: Open Sans Condensed;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  position: relative;
+}
+/* line 100, ../sass/_header.sass */
+.header__number-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 2px;
+  background: #D1A954;
+}
+
+/* line 112, ../sass/_header.sass */
+.header__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 119, ../sass/_header.sass */
+.header__info-left {
+  max-width: 540px;
+  width: 100%;
+}
+
+/* line 124, ../sass/_header.sass */
+.header__info-right {
+  max-width: 350px;
+  width: 100%;
+  height: 40px;
+  height: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 135, ../sass/_header.sass */
+.header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+/* line 144, ../sass/_header.sass */
+.header__text {
+  /* p / 14r */
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 49px;
+  /* or 21px */
+}
+
+/* line 154, ../sass/_header.sass */
+.header__btn-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Open Sans Condensed;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: #D1A954;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+/* line 169, ../sass/_header.sass */
+.header__btn-link:hover {
+  background: #ffffff;
+  color: #D1A954;
+}
+
+/* line 172, ../sass/_header.sass */
+.info-right__imgs {
+  position: relative;
+}
+/* line 174, ../sass/_header.sass */
+.info-right__imgs img {
+  position: absolute;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  left: 0;
+  top: 0;
+}
+/* line 179, ../sass/_header.sass */
+.info-right__imgs img.active {
+  left: -20px;
+  top: -20px;
+  z-index: 2;
+}
+
+/* line 184, ../sass/_header.sass */
+.info-right__btns {
+  width: 100%;
+  position: relative;
+  bottom: -55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 193, ../sass/_header.sass */
+.info-right__btn {
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  color: #C4C4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+}
+/* line 201, ../sass/_header.sass */
+.info-right__btn:hover {
+  color: #ffffff;
+}
+
+/* line 203, ../sass/_header.sass */
+.spanOne {
+  padding-right: 20px;
+}
+
+/* line 206, ../sass/_header.sass */
+.spanTwo {
+  padding-left: 20px;
+}
