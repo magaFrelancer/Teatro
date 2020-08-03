@@ -681,12 +681,20 @@ a {
   margin-bottom: 80px;
 }
 
-/* line 18, ../sass/_partners.sass */
+/* line 17, ../sass/_partners.sass */
+.partners__items {
+  max-width: 200px;
+  width: 100%;
+  height: 96px;
+  padding: 10px;
+}
+/* line 22, ../sass/_partners.sass */
 .partners__items img {
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  width: 100%;
 }
-/* line 21, ../sass/_partners.sass */
+/* line 26, ../sass/_partners.sass */
 .partners__items:hover img {
   opacity: 0.8;
 }
