@@ -1,0 +1,114 @@
+.sms__inner
+    display: flex  
+    flex-direction: column
+    align-items: center
+    margin-bottom: 80px
+.sms__block
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+p.sms__left-items
+    font-family: Open Sans Condensed
+    font-weight: bold
+    font-size: 16px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    &:not(:last-child) 
+        margin-bottom: 20px
+
+//inputs
+.sms__right 
+    max-width: 730px
+    width: 100%
+
+.sms__inputs
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+.sms__inputs-names
+    max-width: 360px
+    width: 100%
+    height: 110px
+    display: flex
+    flex-wrap: wrap 
+    justify-content: space-between
+
+.inputs-names__items
+    max-width: 170px
+    max-height: 35px
+    padding: 10px
+    
+    background: #444444
+    border: 1px solid #616161
+    outline: none
+
+    font-family: Open Sans
+    font-weight: 600
+    font-size: 12px
+    color: #989898
+    &:placeholder 
+        font-family: Open Sans
+        font-weight: 600
+        font-size: 12px
+        color: #989898
+    &:focus 
+        border-color: #D1A954
+
+
+.sms__inputs-sms
+    input
+        padding: 10px 153px 65px 15px
+        background: #444444
+        border: 1px solid #616161
+        outline: none
+
+        font-family: Open Sans
+        font-weight: 600
+        font-size: 12px
+        color: #989898
+        &:placeholder 
+            font-family: Open Sans
+            font-weight: 600
+            font-size: 12px
+            color: #989898
+        &:focus 
+            border-color: #D1A954
+
+.sms__right-down
+    display: flex
+    justify-content: space-between
+
+.sms__right-text
+    font-family: Open Sans
+    font-weight: normal
+    font-size: 12px
+    color: #989898
+    max-width: 390px
+    width: 100%
+
+.sms__right-btn
+    a 
+        width: 190px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 50px
+        background: #D1A954
+        color: #FFFFFF
+        font-family: Open Sans Condensed
+        font-weight: bold
+        font-size: 18px
+    
+        letter-spacing: 0.1em
+        text-transform: uppercase
+
+        transition: .2s linear
+
+        &:hover 
+            color: #D1A954
+            background: #ffffff
+            
+    

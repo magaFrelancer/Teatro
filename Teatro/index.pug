@@ -167,4 +167,34 @@ html(lang="en")
                         .partners__items
                             a(href="#")
                                 img(src="./imgs/partners/logo.png", alt="")
-                                
+        section.sms 
+            .container 
+                .sms__inner
+                    .section-title <span class="oneHarf">стать </span>меценатом
+
+                    .sms__block
+                        .sms__left 
+                            p.sms__left-items +7 (812) 123-45-55
+                            p.sms__left-items +7 (812) 123-45-66
+                            p.sms__left-items info@theater.ru
+                            p.sms__left-items г. санкт-петербург, невский 140
+
+                        .sms__right 
+                            .sms__inputs
+                                .sms__inputs-names
+                                    input.inputs-names__items(type="email", placeholder="Имя")
+                                    input.inputs-names__items(type="tel", placeholder="Телефон", pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}", required)
+                                    input.inputs-names__items(type="email", placeholder="Компания")
+                                    input.inputs-names__items(type="email", placeholder="E-mail")
+                                .sms__inputs-sms
+                                    input(type="text" placeholder="Сообщение")
+                            .sms__right-down 
+                                .sms__right-text.
+                                    * Ваши данные не будут переданы третьим лицам,
+                                    100% вероятность. Конфиденциальность мы гарантируем,
+                                    и защищаем персональные данные согласно законку ФЗ-52.
+                                .sms__right-btn
+                                    a(href="#") отправить
+
+                            
+        include ./pugs/footer.pug                        
