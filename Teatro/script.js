@@ -21,12 +21,21 @@ function target() {
     imgs[index].classList.add('active');
 }
 
-btns.forEach(item=> {item.addEventListener('click',target)})
+btns.forEach(item => { item.addEventListener('click', target) })
 
 
 ////
 let burger = document.querySelector('#burger'),
     mobile_nav = document.querySelector('.mobile-nav'),
-    exit = document.querySelector('#exit'),
-    body = document.querySelector('body');
+    exit = document.querySelector('#exit');
 
+exit.addEventListener('click', closeNav)
+burger.addEventListener('click', openNav)
+
+function openNav() {
+    mobile_nav.classList.add('active')
+}
+
+function closeNav() {
+    mobile_nav.classList.remove('active')
+}
