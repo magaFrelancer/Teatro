@@ -10,6 +10,37 @@ html(lang="en")
         script(src="./script.js" defer)
     body
         header.header
+            .burger#burger
+                img(src="./imgs/burger.svg", alt="burger")
+
+            .mobile-nav
+                .exit#exit 
+                    img(src="./imgs/exit.svg", alt="exit")
+
+                ul.mobile-nav__menu
+                    li.mobile-nav__items
+                        a.mobile-nav__links(href="#") Главная
+                    li.mobile-nav__items
+                        a.mobile-nav__links(href="#") о театре
+                    li.mobile-nav__items
+                        a.mobile-nav__links(href="#") Наши постановки
+                    li.mobile-nav__items
+                        a.mobile-nav__links(href="#") партнеры театра
+                    li.mobile-nav__items
+                        a.mobile-nav__links(href="#") контакты
+
+                .mobile-nav__social 
+                    .mobile-nav__social-top
+                        a.mobile-nav__social-items(href="#", style="padding-left:10px")
+                            i(class="fab fa-facebook-f")
+                        a.mobile-nav__social-items(href="#")
+                            i(class="fab fa-instagram")
+                    .mobile-nav__social-down
+                        a.mobile-nav__social-items(href="#")
+                            i(class="fab fa-youtube")
+                        a.mobile-nav__social-items(href="#")
+                            i(class="fab fa-vk")
+
             .header__left-block
                 .left-block__inner
                     .left-block__text 

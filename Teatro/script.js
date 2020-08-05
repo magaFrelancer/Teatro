@@ -22,3 +22,11 @@ function target() {
 }
 
 btns.forEach(item=> {item.addEventListener('click',target)})
+
+
+////
+let burger = document.querySelector('#burger'),
+    mobile_nav = document.querySelector('.mobile-nav'),
+    exit = document.querySelector('#exit'),
+    body = document.querySelector('body');
+

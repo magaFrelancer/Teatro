@@ -206,3 +206,114 @@
 
 .spanTwo
     padding-left: 20px
+.burger
+    position: absolute
+    top: 60px
+    left: 39px
+    display: none
+
+    &:hover 
+        img 
+            transition: .2s linear
+            opacity: .5
+
+.mobile-nav
+    position: absolute 
+    left: -300px
+    top: 0
+    width: 300px
+    height: 800px
+    background: #333333
+    padding-top: 140px
+    display: none
+    transition: .2s linear
+    &.active 
+        left: 0
+
+.exit
+    position: absolute
+    top: 38px
+    right: 38px
+
+    &:hover 
+        img 
+            transition: .2s linear
+            opacity: .5
+
+.mobile-nav__menu
+    list-style: none
+    margin-left: 39px
+    margin-bottom: 89px
+
+.mobile-nav__items
+    &:not(:last-child)
+        margin-bottom: 35px
+.mobile-nav__links
+    font-family: Open Sans Condensed
+    font-weight: bold
+    font-size: 24px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    transition: .2s linear
+    &:hover 
+        color: #D1A954
+.mobile-nav__social
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 141px
+
+    width: 115px
+.mobile-nav__social-top
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+
+.mobile-nav__social-down
+    width: 100%
+    display: flex
+    justify-content: space-between
+.mobile-nav__social-items
+    i 
+        font-size: 40px
+
+//mobile 
+@media ( max-width: 1250px  )
+    .header__nav
+        flex-direction: column
+        align-items: center
+
+    .header__menu
+        margin-bottom: 50px
+    .header__info-left
+        margin-left: 140px
+    .header__info-right
+        display: none
+    .header__links
+        font-size: 18px
+
+@media  ( max-width: 950px )
+    .header
+        height: 800px
+
+    .header__nav
+        align-items: flex-end
+        padding-top: 23px
+        padding-right: 39px
+
+    .header__menu
+        display: none
+
+    .header__left-block
+        display: none
+
+    .header__info-left
+        margin: 0 auto
+
+    .burger 
+        display: block
+
+    .mobile-nav
+        display: block
+    

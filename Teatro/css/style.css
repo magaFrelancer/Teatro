@@ -341,6 +341,188 @@ a {
   padding-left: 20px;
 }
 
+/* line 209, ../sass/_header.sass */
+.burger {
+  position: absolute;
+  top: 60px;
+  left: 39px;
+  display: none;
+}
+/* line 216, ../sass/_header.sass */
+.burger:hover img {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0.5;
+}
+
+/* line 220, ../sass/_header.sass */
+.mobile-nav {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 300px;
+  height: 800px;
+  background: #333333;
+  padding-top: 140px;
+  display: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/* line 230, ../sass/_header.sass */
+.mobile-nav.active {
+  left: 0;
+}
+
+/* line 233, ../sass/_header.sass */
+.exit {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+}
+/* line 239, ../sass/_header.sass */
+.exit:hover img {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0.5;
+}
+
+/* line 243, ../sass/_header.sass */
+.mobile-nav__menu {
+  list-style: none;
+  margin-left: 39px;
+  margin-bottom: 89px;
+}
+
+/* line 249, ../sass/_header.sass */
+.mobile-nav__items:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+/* line 251, ../sass/_header.sass */
+.mobile-nav__links {
+  font-family: Open Sans Condensed;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+/* line 258, ../sass/_header.sass */
+.mobile-nav__links:hover {
+  color: #D1A954;
+}
+
+/* line 260, ../sass/_header.sass */
+.mobile-nav__social {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 141px;
+  width: 115px;
+}
+
+/* line 267, ../sass/_header.sass */
+.mobile-nav__social-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* line 273, ../sass/_header.sass */
+.mobile-nav__social-down {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 278, ../sass/_header.sass */
+.mobile-nav__social-items i {
+  font-size: 40px;
+}
+
+@media (max-width: 1250px) {
+  /* line 283, ../sass/_header.sass */
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  /* line 287, ../sass/_header.sass */
+  .header__menu {
+    margin-bottom: 50px;
+  }
+
+  /* line 289, ../sass/_header.sass */
+  .header__info-left {
+    margin-left: 140px;
+  }
+
+  /* line 291, ../sass/_header.sass */
+  .header__info-right {
+    display: none;
+  }
+
+  /* line 293, ../sass/_header.sass */
+  .header__links {
+    font-size: 18px;
+  }
+}
+@media (max-width: 950px) {
+  /* line 297, ../sass/_header.sass */
+  .header {
+    height: 800px;
+  }
+
+  /* line 300, ../sass/_header.sass */
+  .header__nav {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-top: 23px;
+    padding-right: 39px;
+  }
+
+  /* line 305, ../sass/_header.sass */
+  .header__menu {
+    display: none;
+  }
+
+  /* line 308, ../sass/_header.sass */
+  .header__left-block {
+    display: none;
+  }
+
+  /* line 311, ../sass/_header.sass */
+  .header__info-left {
+    margin: 0 auto;
+  }
+
+  /* line 314, ../sass/_header.sass */
+  .burger {
+    display: block;
+  }
+
+  /* line 317, ../sass/_header.sass */
+  .mobile-nav {
+    display: block;
+  }
+}
 /* line 1, ../sass/_aboutTeatro.sass */
 .about-teatro {
   height: 757px;
